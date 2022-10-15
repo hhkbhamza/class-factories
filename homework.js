@@ -117,3 +117,25 @@ timmy.exercise()
 timmy.exercise()
 console.log(gus)
 console.log(timmy)
+
+
+
+class Dinner {
+    constructor(appetizer, entree, dessert) {
+        this.appetizer = appetizer
+        this.entree = entree
+        this.dessert = dessert
+    }
+}
+
+class Chef {
+    argMethod(appetizer, entree, dinner) {
+         const meal = new Dinner(appetizer, entree, dinner)
+         return meal
+    }
+}
+const chef = new Chef()
+
+console.log(chef.argMethod("fries", "chicken dumplings", "ice cream"))
+console.log(chef.argMethod("chicken nuggets", "salad", "cheese cake"))
+console.log(chef.argMethod("carrots", "steak", "cake"))
