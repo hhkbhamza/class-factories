@@ -14,11 +14,11 @@ class Hamster {
         return this.price
     }
 }
-const h = new Hamster("Tom")
-h.wheelRun()
-h.eatFood()
-console.log(h.getPrice())
-console.log(h)
+// const h = new Hamster("Tom")
+// h.wheelRun()
+// h.eatFood()
+// console.log(h.getPrice())
+// console.log(h)
 
 
 class Person {
@@ -58,14 +58,62 @@ class Person {
         this.bankAccount += 10
     }
     buyHamster(pet) {
-        p.hamsters.push(pet)
+        timmy.hamsters.push(pet)
         this.mood += 10
         this.bankAccount = this.bankAccount -= pet.getPrice()
     }
 }
-const p = new Person("Henry")
-p.buyHamster(h)
-console.log(p)
+// const p = new Person("Henry")
+// p.buyHamster(h)
+// console.log(p)
 
 
 const timmy = new Person("Timmy")
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.eat()
+timmy.eat()
+timmy.eat()
+timmy.eat()
+timmy.eat()
+timmy.exercise()
+timmy.exercise()
+timmy.exercise()
+timmy.exercise()
+timmy.exercise()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+const gus = new Hamster("Gus")
+gus.owner = "Timmy"
+timmy.buyHamster(gus)
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.eat()
+timmy.eat()
+timmy.exercise()
+timmy.exercise()
+console.log(gus)
+console.log(timmy)
